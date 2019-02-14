@@ -77,7 +77,7 @@ As with many development projects, the repository on Github is considered to be 
 
 ## Supporting the project
 
-Monero is a 100% community-sponsored endeavor. If you want to join our efforts, the easiest thing you can do is support the project financially. Both Monero and Bitcoin donations can be made to **donate.getmonero.org** if using a client that supports the [OpenAlias](https://openalias.org) standard. Alternatively you can send XMR to the Monero donation address via the `donate` command (type `help` in the command-line wallet for details).
+Monero is a 100% community-sponsored endeavor. If you want to join our efforts, the easiest thing you can do is support the project financially. Both Monero and Bitcoin donations can be made to **donate.getmonero.org** if using a client that supports the [OpenAlias](https://openalias.org) standard. Alternatively you can send MIC to the Monero donation address via the `donate` command (type `help` in the command-line wallet for details).
 
 The Monero donation address is: `44AFFq5kSiGBoZ4NMDwYtN18obc8AemS33DBLWs3H7otXft3XjrpDtQGv7SqSsaBYBb98uNbr2VBBEt7f2wfn3RVGQBEP3A` (viewkey: `f359631075708155cc3d92a32b75a7d02a5dcf27756707b47a2b31b21c389501`)
 
@@ -571,10 +571,10 @@ Installing a snap is very quick. Snaps are secure. They are isolated with all of
         docker build --build-arg NPROC=1 -t monero .
 
         # either run in foreground
-        docker run -it -v /monero/chain:/root/.bitmonero -v /monero/wallet:/wallet -p 18080:18080 monero
+        docker run -it -v /monero/chain:/root/.bitmonero -v /monero/wallet:/wallet -p 15013:15013 monero
 
         # or in background
-        docker run -it -d -v /monero/chain:/root/.bitmonero -v /monero/wallet:/wallet -p 18080:18080 monero
+        docker run -it -d -v /monero/chain:/root/.bitmonero -v /monero/wallet:/wallet -p 15013:15013 monero
 
 * The build needs 3 GB space.
 * Wait one  hour or more
@@ -653,7 +653,7 @@ TAILS ships with a very restrictive set of firewall rules. Therefore, you need
 to add a rule to allow this connection too, in addition to telling torsocks to
 allow inbound connections. Full example:
 
-    sudo iptables -I OUTPUT 2 -p tcp -d 127.0.0.1 -m tcp --dport 18081 -j ACCEPT
+    sudo iptables -I OUTPUT 2 -p tcp -d 127.0.0.1 -m tcp --dport 15014 -j ACCEPT
     DNS_PUBLIC=tcp torsocks ./monerod --p2p-bind-ip 127.0.0.1 --no-igd --rpc-bind-ip 127.0.0.1 \
         --data-dir /home/amnesia/Persistent/your/directory/to/the/blockchain
 

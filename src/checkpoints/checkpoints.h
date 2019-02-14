@@ -30,6 +30,7 @@
 
 #pragma once
 #include <map>
+#include <vector>
 #include "misc_log_ex.h"
 #include "crypto/hash.h"
 #include "cryptonote_config.h"

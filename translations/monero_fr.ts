@@ -5126,8 +5126,8 @@ ATTENTION : Ne réutilisez pas vos clés Monero avec un autre fork, À MOINS QUE
     </message>
     <message>
         <location filename="../src/wallet/wallet2.cpp" line="207"/>
-        <source>Use daemon instance at port &lt;arg&gt; instead of 18081</source>
-        <translation>Utiliser l&apos;instance de démon située au port &lt;arg&gt; au lieu de 18081</translation>
+        <source>Use daemon instance at port &lt;arg&gt; instead of 15014</source>
+        <translation>Utiliser l&apos;instance de démon située au port &lt;arg&gt; au lieu de 15014</translation>
     </message>
     <message>
         <location filename="../src/wallet/wallet2.cpp" line="209"/>
